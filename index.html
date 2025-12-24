@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Gift for Gemini</title>
+    <title>Christmas Gift For Daineso Kecii</title>
     <style>
-        /* Mengatur tampilan dasar halaman */
         body {
-            background-color: #1a1a2e; /* Latar belakang malam yang gelap */
+            background-color: #1a1a2e;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,34 +18,28 @@
             overflow: hidden;
         }
 
-        /* Wadah untuk pohon dan teks */
         .container {
             text-align: center;
             position: relative;
             z-index: 2;
-            /* Menambahkan padding agar teks bawah tidak terlalu mepet layar bawah di HP */
             padding-bottom: 50px; 
         }
 
-        /* Gaya untuk teks ucapan utama */
         h1 {
             font-size: 3rem;
             margin-top: 20px;
-            margin-bottom: 10px; /* Mengurangi jarak ke bawah */
+            margin-bottom: 10px;
             text-shadow: 0 0 10px #ff0000, 0 0 20px #ff6b6b;
             animation: textGlow 2s infinite alternate;
         }
 
-        /* --- GAYA BARU UNTUK TEKS TAMBAHAN --- */
         .sub-text {
-            font-size: 1.5rem; /* Ukuran lebih kecil dari judul utama */
-            color: #ffcccb;    /* Warna pink kemerahan lembut */
+            font-size: 1.5rem;
+            color: #ffcccb;
             margin-top: 0;
             font-weight: bold;
             letter-spacing: 1px;
-            /* Memberikan sedikit efek cahaya lembut */
             text-shadow: 0 0 5px #ffcccb, 0 0 10px #ff69b4;
-            /* Animasi goyang sedikit agar lucu */
             animation: gentleRock 3s ease-in-out infinite alternate;
         }
 
@@ -54,16 +47,13 @@
             0% { transform: rotate(-2deg); }
             100% { transform: rotate(2deg); }
         }
-        /* ------------------------------------ */
 
 
-        /* Animasi untuk teks utama agar bersinar */
         @keyframes textGlow {
             from { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff6b6b; }
             to { text-shadow: 0 0 20px #ff0000, 0 0 40px #ff6b6b, 0 0 60px #ffcccb; }
         }
 
-        /* Animasi untuk lampu pohon */
         @keyframes twinkle {
             0%, 100% { opacity: 0.3; transform: scale(1); }
             50% { opacity: 1; transform: scale(1.2); }
@@ -71,15 +61,13 @@
 
         .light {
             animation: twinkle 1.5s infinite ease-in-out;
-            transform-origin: center; /* Penting agar scaling rapi */
+            transform-origin: center;
             transform-box: fill-box;
         }
-        /* Memberikan delay berbeda agar kerlap-kerlip tidak bersamaan */
         .delay-1 { animation-delay: 0.3s; }
         .delay-2 { animation-delay: 0.7s; }
         .delay-3 { animation-delay: 1.1s; }
 
-        /* Hiasan salju di background */
         .snowflake {
             color: #fff;
             font-size: 1em;
